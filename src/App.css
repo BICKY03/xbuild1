@@ -1,38 +1,30 @@
 .App {
   text-align: center;
+  height: 100vh;
+  width: 100vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.country-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex; /* Change the display to flex */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.country-item {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center; /* Align items vertically */
+  margin-right: 20px; /* Add space between items */
 }
 
-.App-link {
-  color: #61dafb;
+.country-flag {
+  width: 50px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners */
+  margin-right: 10px; /* Add space between flag and name */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.country-name {
+  margin: 0; /* Remove default margin */
 }
+
